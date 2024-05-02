@@ -5,6 +5,6 @@ module.exports = {
 }
 
 async function index(req, res) {
-    const matches = await Match.find({}).sort('name')
+    const matches = await Match.find({})
     res.join(matches)
 }
