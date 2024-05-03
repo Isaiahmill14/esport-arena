@@ -7,5 +7,5 @@ module.exports = {
 
 async function index(req, res) {
     const tournaments = await Tournament.find({})
-    res.join(tournaments)
+    res.json(tournaments)
 }
