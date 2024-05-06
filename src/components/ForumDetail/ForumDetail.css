@@ -1,0 +1,40 @@
+.forum-container {
+    display: flex;
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    height: 25vh; /* Take up the full viewport height */
+  }
+
+.forum-card {
+    display: flex; /* Use flexbox for horizontal layout */
+    flex-direction: column; /* Arrange children vertically */
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    width: 300px; /* Adjust width as needed */
+    height: 150px;/* Adjust height as needed */
+    padding: 20px; /* Add padding for spacing */
+    border: 1px solid #ccc; /* Add border for card */
+    border-radius: 8px; /* Add border radius for rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+    position: relative; /* Set position relative for absolute positioning */
+    background-color: #1684c4e8;
+  }
+  
+  .content {
+    /* Style content */
+  }
+  
+  .xAccount {
+    position: absolute; /* Position xAccount absolutely */
+    bottom: 10px; /* Adjust bottom spacing */
+    right: 10px; /* Adjust right spacing */
+    font-size: 12px; /* Adjust font size */
+  }
+  
+  .edit-link {
+    position: absolute; /* Position edit link absolutely */
+    bottom: 10px; /* Adjust bottom spacing */
+    left: 10px; /* Adjust left spacing */
+    text-decoration: none; /* Remove underline */
+    color: #000000; /* Set link color */
+  }
