@@ -26,7 +26,7 @@ app.use('/api/users', require('./routes/api/users'));
 // Protect all routes below from anonymous users
 const ensureLoggedIn = require('./config/ensureLoggedIn')
 app.use('/api/matches', ensureLoggedIn, require('./routes/api/matches'))
-app.use('/api/tournaments', ensureLoggedIn, require('./routes/api/tournaments'))
+app.use('/api/forums', ensureLoggedIn, require('./routes/api/forums'))
 
 // "catch-all" route that will match all GET requests
 // that don't match an API route defined above

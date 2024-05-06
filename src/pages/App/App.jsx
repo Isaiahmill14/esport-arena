@@ -21,7 +21,7 @@ export default function App() {
             <Route path="/matches" element={<LadderMatches />} />
             <Route path="/forums" element={<Forums />} />
             {/* redirect to /forums if path in address bar hasn't matched a <Route> above */}
-            <Route path="/*" element={<Navigate to="/forums" />} />
+            <Route path="/*" element={<Navigate to="/matches" />} />
           </Routes>
         </>
         :

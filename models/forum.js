@@ -1,12 +1,9 @@
 const mongoose = require('mongoose');
-const Schema = mongoose.Schema;
+const Schema = require('mongoose').Schema
 
 const forumSchema = new Schema({
-  content: {
-    type: String,
-    required: true
-  },
-  xAccount: { type: String, },
+  content: { type: String, required: true },
+  xAccount: { type: String },
 }, {
   timestamps: true
 });

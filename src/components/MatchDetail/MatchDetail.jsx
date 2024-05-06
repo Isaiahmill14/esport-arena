@@ -9,6 +9,7 @@ export default function MatchDetail({ ladderMatches }) {
                     <div className="game">{ladderMatches.game}</div>
                     <div className="date">{ladderMatches.date}</div>
                     <div className="type">{ladderMatches.type}</div>
+                    <button></button>
                 </div>
             </div>
         </div>
