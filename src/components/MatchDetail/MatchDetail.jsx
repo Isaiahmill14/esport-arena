@@ -10,7 +10,7 @@ export default function MatchDetail({ ladderMatches }) {
                     <div className="game">{ladderMatches.game}</div>
                     <div className="date">{ladderMatches.date}</div>
                     <div className="type">{ladderMatches.type}</div>
-                    <Link to="/matches/details">Details</Link>
+                    <Link to={`/matches/${ladderMatches._id}`}>Details</Link>
                 </div>
             </div>
         </div>

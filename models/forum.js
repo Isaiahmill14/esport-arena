@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const Schema = require('mongoose').Schema
+const Schema = mongoose.Schema
 
 const forumSchema = new Schema({
   content: { type: String, required: true },
@@ -8,4 +8,4 @@ const forumSchema = new Schema({
   timestamps: true
 });
 
-module.export = mongoose.model('Forum', forumSchema)
+module.exports = mongoose.model('Forum', forumSchema)

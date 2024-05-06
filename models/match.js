@@ -1,11 +1,11 @@
 const mongoose = require('mongoose')
-const Schema = require('mongoose').Schema
+const Schema = mongoose.Schema
 
 const matchSchema = new Schema({
-    game: { type: String, required: true, },
+    game: { type: String, required: true, default: 'Call of Duty MW3'},
     date: { type: Date, required: true },
-    type: { type: String, required: true },
-    user: { type: Schema.Types.ObjectId, ref: 'User', required: true }
+    type: { type: String, required: true, default: '1v1' },
+    user: [{ type: Schema.Types.ObjectId, ref: 'User', required: true }]
 }, {
     timestamps: true
 })

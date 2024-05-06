@@ -3,9 +3,9 @@ import * as matchesAPI from '../../utilities/matches-api'
 
 export default function NewMatchForm({ addMatch }) {
     const [newMatch, setNewMatch] = useState({
-        game: '',
+        game: 'Call of Duty MW3',
         date: '',
-        type: '',
+        type: '1v1',
     })
 
     function handleInputChange(evt) {
@@ -32,7 +32,7 @@ export default function NewMatchForm({ addMatch }) {
                 <label htmlFor="game">
                     Game:
                     <select name="game" id="game" value={newMatch.game} onChange={handleInputChange}>
-                        <option value="MWIII">MWIII</option>
+                        <option value="Call of Duty MW3">Call of Duty MW3</option>
                         <option value="Halo Infinite">Halo Infinite</option>
                         <option value="Fortnite">Fortnite</option>
                     </select>

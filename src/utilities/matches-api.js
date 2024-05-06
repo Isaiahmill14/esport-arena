@@ -13,6 +13,6 @@ export async function addOne(formData) {
     return sendRequest(BASE_URL, 'POST', formData)
 } 
 
-export async function editOne(formData) {
-    return sendRequest(BASE_URL, 'POST', formData)
+export async function editOne(id, formData) {
+    return sendRequest(`${BASE_URL}/${id}`, 'PUT', formData)
 }

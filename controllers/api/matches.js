@@ -5,7 +5,6 @@ module.exports = {
     show,
     new: newMatch,
     create,
-    edit,
     update,
     delete: deleteMatch,
 }
@@ -28,16 +27,12 @@ async function newMatch(req, res) {
 async function create(req, res) {
     try {
         req.body.user = req.user
+        console.log(req.body)
         const match = await Match.create(req.body)
         res.json(match)
     } catch (err) {
         console.log(err)
     }
-}
-
-async function edit(req, res) {
-    const match = await Match.findById(req.params.id)
-    res.json(match)
 }
 
 async function update(req, res) {
@@ -46,6 +41,6 @@ async function update(req, res) {
 }
 
 async function deleteMatch(req, res) {
-    const match = await Match.findByIdAndDelete(req.params.id, req.body)
+    const match = await Match.findByIdAndDelete(req.params.id)
     res.json(match)
 }

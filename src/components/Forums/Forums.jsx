@@ -1,13 +1,13 @@
 import ForumDetail from "../ForumDetail/ForumDetail";
 
-export default function Forums({ f }) {
-    console.log(f)
-    const forumPosts = f.map(forum =>
+export default function Forums({ forums }) {
+    console.log(forums)
+    const forumPosts = forums ? forums.map(forum =>
         <ForumDetail
             key={forum._id}
-            f={forum}
+            forums={forum}
         />
-    )
+    ) : null
 
     return (
         <div className="Forums">

@@ -1,19 +1,12 @@
 import { useState, useEffect } from "react";
 import * as matchesAPI from '../../utilities/matches-api';
 
-export default function EditMatchForm({ matchToEdit, updateMatch }) {
+export default function EditMatchForm({ id }) {
     const [editedMatch, setEditedMatch] = useState({
-        game: '',
+        game: 'Call of Duty MW3',
         date: '',
-        type: '',
+        type: '1v1',
     });
-
-    // Update the editedMatch state when matchToEdit prop changes
-    useEffect(() => {
-        if (matchToEdit) {
-            setEditedMatch(matchToEdit);
-        }
-    }, [matchToEdit]);
 
     function handleInputChange(evt) {
         const { name, value } = evt.target;
@@ -25,17 +18,16 @@ export default function EditMatchForm({ matchToEdit, updateMatch }) {
 
     function handleEditMatch(evt) {
         evt.preventDefault();
-        matchesAPI.editOne(editedMatch)
-        updateMatch(editedMatch);
+        matchesAPI.editOne(id, editedMatch)
     }
-
+    console.log(id)
     return (
         <form className="EditMatchForm" onSubmit={handleEditMatch}>
             <div className="flex-ctr-ctr">
                 <label htmlFor="game">
                     Game:
                     <select name="game" id="game" value={editedMatch.game} onChange={handleInputChange}>
-                        <option value="MWIII">MWIII</option>
+                        <option value="Call of Duty MW3">Call of Duty MW3</option>
                         <option value="Halo Infinite">Halo Infinite</option>
                         <option value="Fortnite">Fortnite</option>
                     </select>
