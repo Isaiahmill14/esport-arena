@@ -6,7 +6,7 @@ const forumSchema = new Schema({
     type: String,
     required: true
   },
-  xAccount: { type: String,  }
+  xAccount: { type: String, },
 }, {
   timestamps: true
 });

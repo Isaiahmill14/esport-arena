@@ -11,9 +11,9 @@ export default function NavBar({ user, setUser }) {
 
   return (
     <nav>
-      <Link to="/tournaments">Tournaments</Link>
+      <Link to="/matches">Ladder Matches</Link>
       &nbsp; | &nbsp;
-      <Link to="/tournaments/matches">Ladder Matches</Link>
+      <Link to="/forums">Forums</Link>
       &nbsp; | &nbsp;
       <span>Welcome, {user.name}</span>
       &nbsp; | &nbsp;

@@ -2,10 +2,9 @@ const mongoose = require('mongoose')
 const Schema = require('mongoose').Schema
 
 const matchSchema = new Schema({
-    game: { type: String, required: true, enum: ['MWIII', 'Halo Infinite', 'Fortnite'] },
+    game: { type: String, required: true, },
     date: { type: Date, required: true},
-    type: { type: String, required: true, enum: ['1v1', '2v2', '3v3', '4v4'] },
-    tournament: { type: Schema.Types.ObjectId, ref: 'Tournament'},
+    type: { type: String, required: true, },
     user: { type: Schema.Types.ObjectId, ref: 'User', required: true }
 }, {
     timestamps: true

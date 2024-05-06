@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Routes, Route, Navigate } from 'react-router-dom';
 import { getUser } from '../../utilities/users-service';
 import AuthPage from '../AuthPage/AuthPage';
-import Tournaments from '../Tournaments/Tournaments';
+import Forums from '../Forums/Forums';
 import LadderMatches from '../LadderMatches/LadderMatches';
 import NavBar from '../../components/NavBar/NavBar';
 import './App.css';
@@ -18,10 +18,10 @@ export default function App() {
           <Routes>
             {/* Route components in here */}
             {/* client-side route that renders the component instance if the path matches the url in the address bar */}
-            <Route path="/tournaments/matches" element={<LadderMatches />} />
-            <Route path="/tournaments" element={<Tournaments />} />
-            {/* redirect to /tournaments if path in address bar hasn't matched a <Route> above */}
-            <Route path="/*" element={<Navigate to="/tournaments" />} />
+            <Route path="/matches" element={<LadderMatches />} />
+            <Route path="/forums" element={<Forums />} />
+            {/* redirect to /forums if path in address bar hasn't matched a <Route> above */}
+            <Route path="/*" element={<Navigate to="/forums" />} />
           </Routes>
         </>
         :
