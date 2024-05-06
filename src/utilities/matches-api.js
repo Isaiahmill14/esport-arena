@@ -12,3 +12,7 @@ export async function getById(id) {
 export async function addOne(formData) {
     return sendRequest(BASE_URL, 'POST', formData)
 } 
+
+export async function editOne(formData) {
+    return sendRequest(BASE_URL, 'POST', formData)
+}

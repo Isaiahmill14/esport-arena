@@ -26,7 +26,7 @@ export default function LadderMatches() {
 
   return (
     <main className='LadderMatches'>
-      <h1>Ladder Matches</h1>
+      <h1>Matches</h1>
       <Matches ladderMatches={ladderMatches} />
       <hr />
       <NewMatchForm addMatch={addMatch} />

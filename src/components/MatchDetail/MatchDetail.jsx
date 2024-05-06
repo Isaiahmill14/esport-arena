@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import './MatchDetail.css'
 
 export default function MatchDetail({ ladderMatches }) {
@@ -9,7 +10,7 @@ export default function MatchDetail({ ladderMatches }) {
                     <div className="game">{ladderMatches.game}</div>
                     <div className="date">{ladderMatches.date}</div>
                     <div className="type">{ladderMatches.type}</div>
-                    <button></button>
+                    <Link to="/matches/details">Details</Link>
                 </div>
             </div>
         </div>
