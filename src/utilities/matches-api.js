@@ -16,3 +16,7 @@ export async function addOne(formData) {
 export async function editOne(id, formData) {
     return sendRequest(`${BASE_URL}/${id}`, 'PUT', formData)
 }
+
+export async function deleteOne(id, formData) {
+    return sendRequest(`${BASE_URL}/${id}`, 'DELETE', formData)
+}

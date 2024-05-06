@@ -5,6 +5,7 @@ import AuthPage from '../AuthPage/AuthPage';
 import Forums from '../Forums/Forums';
 import LadderMatches from '../LadderMatches/LadderMatches';
 import MatchDetail from '../MatchDetail/MatchDetail';
+import ForumDetail from '../ForumDetail/ForumDetail';
 import NavBar from '../../components/NavBar/NavBar';
 import './App.css';
 
@@ -22,6 +23,7 @@ export default function App() {
             <Route path="/matches" element={<LadderMatches />} />
             <Route path="/forums" element={<Forums />} />
             <Route path="/matches/:id" element={<MatchDetail />} />
+            <Route path="/forums/:id" element={<ForumDetail />} />
             {/* redirect to /forums if path in address bar hasn't matched a <Route> above */}
             <Route path="/*" element={<Navigate to="/matches" />} />
           </Routes>

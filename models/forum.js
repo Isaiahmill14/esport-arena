@@ -3,7 +3,7 @@ const Schema = mongoose.Schema
 
 const forumSchema = new Schema({
   content: { type: String, required: true },
-  xAccount: { type: String },
+  xAccount: { type: String, required: true },
 }, {
   timestamps: true
 });

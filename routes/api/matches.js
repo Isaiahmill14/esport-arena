@@ -4,11 +4,13 @@ const matchesCtrl = require('../../controllers/api/matches')
 
 // GET /api/matches
 router.get('/', matchesCtrl.index)
-// GET /api/matches
+// POST /api/matches
 router.post('/', matchesCtrl.create)
 // GET /api/matches/:id
 router.get('/:id', matchesCtrl.show)
-// GET /api/match/:id
+// PUT /api/matches/:id
 router.put('/:id', matchesCtrl.update)
+// DELETE /api/matches/:id
+router.delete('/:id', matchesCtrl.delete)
 
 module.exports = router

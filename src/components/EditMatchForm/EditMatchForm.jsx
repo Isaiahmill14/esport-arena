@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import * as matchesAPI from '../../utilities/matches-api';
 
 export default function EditMatchForm({ id }) {

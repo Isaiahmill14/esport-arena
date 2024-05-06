@@ -5,7 +5,6 @@ module.exports = {
     show,
     new: newForum,
     create,
-    edit,
     update,
     delete: deleteForum,
 }
@@ -34,17 +33,12 @@ async function create(req, res) {
     }
 }
 
-async function edit(req, res) {
-    const forum = await Forum.findById(req.params.id)
-    res.json(forum)
-}
-
 async function update(req, res) {
     const forum = await Forum.findByIdAndUpdate(req.params.id, req.body)
     res.json(forum)
 }
 
 async function deleteForum(req, res) {
-    const forum = await Forum.findByIdAndDelete(req.params.id, req.body)
+    const forum = await Forum.findByIdAndDelete(req.params.id)
     res.json(forum)
 }

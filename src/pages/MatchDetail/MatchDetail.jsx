@@ -14,12 +14,13 @@ export default function MatchDetails() {
             setLadderMatch(match)
         }
         getMatch()
-    }, [])
+    }, [id])
 
     return (
         <main className="LadderMatch">
             <h1>Match Details</h1>
             <MatchDetail ladderMatches={ladderMatch} />
+            <hr />
             <EditMatchForm id={id} />
         </main>
     )
