@@ -20,7 +20,6 @@ export default function ForumDetails() {
         <main className="Forum">
             <h2>Edit Forum</h2>
             <ForumDetail forums={forum} />
-            <hr />
             <EditForumForm id={id} />
         </main>
     )
