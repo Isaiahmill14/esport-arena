@@ -10,18 +10,14 @@
     flex-direction: column; /* Arrange children vertically */
     justify-content: center; /* Center content vertically */
     align-items: center; /* Center content horizontally */
-    width: 300px; /* Adjust width as needed */
-    height: 150px;/* Adjust height as needed */
-    padding: 20px; /* Add padding for spacing */
+    width: 500px; /* Adjust width as needed */
+    height: 150px;
+    padding: 20px;
     border: 1px solid #ccc; /* Add border for card */
     border-radius: 8px; /* Add border radius for rounded corners */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
     position: relative; /* Set position relative for absolute positioning */
-    background-color: #1684c4e8;
-  }
-  
-  .content {
-    /* Style content */
+    background-color: #595e606c;
   }
   
   .xAccount {
@@ -37,4 +33,15 @@
     left: 10px; /* Adjust left spacing */
     text-decoration: none; /* Remove underline */
     color: #000000; /* Set link color */
+  }
+
+  button.delete-forum {
+    position: absolute;
+    top: -8px;
+    right: -7px;
+    height: 20px;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }

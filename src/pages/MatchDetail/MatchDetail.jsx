@@ -18,7 +18,7 @@ export default function MatchDetails() {
 
     return (
         <main className="LadderMatch">
-            <h1>Match Details</h1>
+            <h2>Match Details</h2>
             <MatchDetail ladderMatches={ladderMatch} />
             <hr />
             <EditMatchForm id={id} />

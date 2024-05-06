@@ -26,11 +26,11 @@ export default function LadderMatches() {
 
   return (
     <main className='LadderMatches'>
-      <h1>Matches</h1>
-      <Matches ladderMatches={ladderMatches} />
-      <hr />
+      <h2>Ladder Matches</h2>
       <NewMatchForm addMatch={addMatch} />
-      <button onClick={handleCheckToken}>Check When My Login Expires</button>
+      <hr />
+      <Matches ladderMatches={ladderMatches} />
+      {/* <button onClick={handleCheckToken}>Check When My Login Expires</button> */}
     </main>
   );
 }

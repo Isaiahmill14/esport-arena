@@ -10,5 +10,7 @@ router.post('/', forumsCtrl.create)
 router.get('/:id', forumsCtrl.show)
 // PUT /api/forums/:id
 router.put('/:id', forumsCtrl.update)
+// DELETE /api/forums/:id
+router.delete('/:id', forumsCtrl.delete)
 
 module.exports = router

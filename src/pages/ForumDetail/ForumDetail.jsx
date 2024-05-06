@@ -18,7 +18,7 @@ export default function ForumDetails() {
 
     return (
         <main className="Forum">
-            <h1>Forum Details</h1>
+            <h2>Edit Forum</h2>
             <ForumDetail forums={forum} />
             <hr />
             <EditForumForm id={id} />

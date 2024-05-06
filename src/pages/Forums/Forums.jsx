@@ -22,10 +22,10 @@ export default function ShowForums() {
 
   return (
     <main className='Forums'>
-      <h1>Forums</h1>
-      <Forums forums={forums} />
-      <hr />
+      <h2>Forums</h2>
       <NewForumForm addForum={addForum} />
+      <hr />
+      <Forums forums={forums} />
     </main>
   );
 }

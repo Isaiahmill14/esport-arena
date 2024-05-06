@@ -1,0 +1,14 @@
+.navbar {
+    background-color: #282b345d; /* Background color of the navbar */
+    color: #fff; /* Text color */
+    padding: 10px; /* Padding around the navbar */
+    display: flex; /* Use flexbox for layout */
+    justify-content: flex-end; /* Align items to the start and end of the navbar */
+    border-color: black;
+}
+
+.navbar-links a {
+    color: #fff; /* Text color of links */
+    text-decoration: none; /* Remove underline from links */
+    margin-right: 10px; /* Add some space between links */
+}
