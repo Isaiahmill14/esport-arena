@@ -4,8 +4,9 @@ import Matches from '../../components/Matches/Matches';
 import NewMatchForm from '../../components/NewMatchForm/NewMatchForm';
 // import * as userService from '../../utilities/users-service'
 
-export default function LadderMatches() {
+export default function LadderMatches({ user }) {
   const [ladderMatches, setLadderMatches] = useState([])
+  const [toggle, setToggle] = useState(true)
 
   useEffect(function() {
     async function getMatches() {
@@ -13,7 +14,7 @@ export default function LadderMatches() {
       setLadderMatches(matches)
     }
     getMatches()
-  }, [])
+  }, [toggle])
 
   // async function handleCheckToken() {
   //   const expDate = await userService.checkToken()
@@ -22,15 +23,14 @@ export default function LadderMatches() {
   
   function addMatch(match) {
     setLadderMatches({...ladderMatches, match})
-    window.location.reload();
   }
 
   return (
     <main className='LadderMatches'>
       <h2>Ladder Matches</h2>
-      <NewMatchForm addMatch={addMatch} />
+      <NewMatchForm setToggle={setToggle} addMatch={addMatch} />
       <hr />
-      <Matches ladderMatches={ladderMatches} />
+      <Matches ladderMatches={ladderMatches} user={user} toggle={toggle} setToggle={setToggle} />
       {/* <button onClick={handleCheckToken}>Check When My Login Expires</button> */}
     </main>
   );

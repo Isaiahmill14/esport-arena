@@ -11,7 +11,6 @@ import './App.css';
 
 export default function App() {
   const [user, setUser] = useState(getUser());
-
   return (
     <main className="App">
       { user ?
@@ -20,10 +19,10 @@ export default function App() {
           <Routes>
             {/* Route components in here */}
             {/* client-side route that renders the component instance if the path matches the url in the address bar */}
-            <Route path="/matches" element={<LadderMatches />} />
-            <Route path="/forums" element={<Forums />} />
-            <Route path="/matches/:id" element={<MatchDetail />} />
-            <Route path="/forums/:id" element={<ForumDetail />} />
+            <Route path="/matches" element={<LadderMatches user={user} />} />
+            <Route path="/forums" element={<Forums user={user} />} />
+            <Route path="/matches/:id" element={<MatchDetail user={user} />} />
+            <Route path="/forums/:id" element={<ForumDetail user={user} />} />
             {/* redirect to /forums if path in address bar hasn't matched a <Route> above */}
             <Route path="/*" element={<Navigate to="/matches" />} />
           </Routes>

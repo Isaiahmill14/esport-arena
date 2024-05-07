@@ -1,11 +1,13 @@
 import { useState } from "react";
 import * as matchesAPI from '../../utilities/matches-api';
+import './EditMatchForm.css'
 
-export default function EditMatchForm({ id }) {
+export default function EditMatchForm({ id, setEditMatch }) {
     const [editedMatch, setEditedMatch] = useState({
         game: 'Call of Duty MW3',
         date: '',
         type: '1v1',
+        gamerTag: '',
     });
 
     function handleInputChange(evt) {
@@ -16,9 +18,16 @@ export default function EditMatchForm({ id }) {
         }));
     }
 
-    function handleEditMatch(evt) {
+    async function handleEditMatch(evt) {
         evt.preventDefault();
-        matchesAPI.editOne(id, editedMatch)
+        await matchesAPI.editOne(id, editedMatch)
+        setEditMatch(prevEditMatch => !prevEditMatch)
+        setEditedMatch({
+            game: 'Call of Duty MW3',
+            date: '',
+            type: '1v1',
+            gamerTag: '',
+        })
     }
     console.log(id)
     return (
@@ -44,6 +53,10 @@ export default function EditMatchForm({ id }) {
                         <option value="3v3">3v3</option>
                         <option value="4v4">4v4</option>
                     </select>
+                </label>
+                <label htmlFor="gamerTag">
+                    GamerTag:
+                    <input type="text" name="gamerTag" value={editedMatch.gamerTag} onChange={handleInputChange} />
                 </label>
             </div>
             <button type="submit">UPDATE MATCH</button>

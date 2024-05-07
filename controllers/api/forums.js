@@ -26,6 +26,7 @@ async function newForum(req, res) {
 
 async function create(req, res) {
     try {
+        req.body.user = req.user
         const forum = await Forum.create(req.body)
         res.json(forum)
     } catch (err) {

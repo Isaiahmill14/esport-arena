@@ -1,11 +1,13 @@
 import { useState } from "react"
 import * as matchesAPI from '../../utilities/matches-api'
+import './NewMatchForm.css'
 
-export default function NewMatchForm({ addMatch }) {
+export default function NewMatchForm({ setToggle }) {
     const [newMatch, setNewMatch] = useState({
         game: 'Call of Duty MW3',
         date: '',
         type: '1v1',
+        gamerTag: '',
     })
 
     function handleInputChange(evt) {
@@ -16,19 +18,21 @@ export default function NewMatchForm({ addMatch }) {
         }))
     }
 
-    function handleAddMatch(evt) {
+    async function handleAddMatch(evt) {
         evt.preventDefault()
-        matchesAPI.addOne(newMatch)
+        await matchesAPI.addOne(newMatch)
+        setToggle(prevToggle => !prevToggle)
         setNewMatch({
             game: '',
             date: '',
-            type: ''
+            type: '',
+            gamerTag: '',
         })
     }
 
     return (
         <form className="NewMatchForm" onSubmit={handleAddMatch}>
-            <div className="flex-ctr-ctr">
+            <div className="form-group">
                 <label htmlFor="game">
                     Game:
                     <select name="game" id="game" value={newMatch.game} onChange={handleInputChange}>
@@ -49,6 +53,10 @@ export default function NewMatchForm({ addMatch }) {
                         <option value="3v3">3v3</option>
                         <option value="4v4">4v4</option>
                     </select>
+                </label>
+                <label htmlFor="gamerTag">
+                    GamerTag:
+                    <input type="text" name="gamerTag" value={newMatch.gamerTag} onChange={handleInputChange} />
                 </label>
             </div>
             <button type="submit">ADD MATCH</button>

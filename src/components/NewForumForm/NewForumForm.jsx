@@ -1,7 +1,8 @@
 import { useState } from "react"
 import * as forumsAPI from '../../utilities/forums-api'
+import './NewForumForm.css'
 
-export default function NewForumForm({ addForum }) {
+export default function NewForumForm({ setBananas }) {
     const [newForum, setNewForum] = useState({
         content: '',
         xAccount: '',
@@ -15,9 +16,10 @@ export default function NewForumForm({ addForum }) {
         }))
     }
 
-    function handleAddForum(evt) {
+    async function handleAddForum(evt) {
         evt.preventDefault()
-        forumsAPI.addOne(newForum)
+        await forumsAPI.addOne(newForum)
+        setBananas(prevBananas => !prevBananas)
         setNewForum({
             content: '',
             xAccount: '',
@@ -29,11 +31,11 @@ export default function NewForumForm({ addForum }) {
             <div className="flex-ctr-ctr">
                 <label htmlFor="content">
                     Content:
-                    <input name="content" id="content" value={newForum.content} onChange={handleInputChange} />
+                    <input className="input-field" name="content" id="content" value={newForum.content} onChange={handleInputChange} />
                 </label>
                 <label htmlFor="xAccount">
                     xAccount:
-                    <input name="xAccount" id="xAccount" value={newForum.xAccount} onChange={handleInputChange} />
+                    <input className="input-field" name="xAccount" id="xAccount" value={newForum.xAccount} onChange={handleInputChange} />
                 </label>
             </div>
             <button type="submit">ADD FORUM</button>

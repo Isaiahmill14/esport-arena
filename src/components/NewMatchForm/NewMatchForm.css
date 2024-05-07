@@ -1,0 +1,22 @@
+.NewMatchForm {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px; /* Adjust as needed */
+}
+
+label {
+    margin-right: 10px; /* Adjust as needed */
+}
+
+button {
+    display: block;
+    margin: 0 auto;
+}

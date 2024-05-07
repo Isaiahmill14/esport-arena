@@ -9,7 +9,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #fff;
+    background-color: #595e606c;
     border: 1px solid #ccc; /* Add border for card */
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -38,20 +38,19 @@
 }
 
 .date, .type {
-    color: #666;
+    color: #000000;
 }
 
 .play-link {
     position: absolute;
     text-decoration: none;
     color: black;
-    
 }
 
 button.delete-match {
-    position: absolute;
-    right: 1px;
     display: flex;
     align-items: center;
     justify-content: center;
+    color: white;
+    margin-top: 5px;
 }
