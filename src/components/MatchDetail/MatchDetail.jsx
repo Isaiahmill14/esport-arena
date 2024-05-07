@@ -9,6 +9,10 @@ export default function MatchDetail({ ladderMatches }) {
         matchesAPI.deleteOne(ladderMatches._id)
     }
 
+    const handleJoin = async () => {
+        
+    }
+    
     const isExcludedPage = location.pathname === `/matches/${ladderMatches._id}`
 
     return (
@@ -23,6 +27,7 @@ export default function MatchDetail({ ladderMatches }) {
                         <Link to={`/matches/${ladderMatches._id}`} className='play-link'>Play</Link>
                     )}
                     <button onClick={handleClick} className="delete-match"></button>
+                    <button onClick={handleJoin} className='append-user'></button>
                 </div>
             </div>
         </div>

@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import * as matchesAPI from '../../utilities/matches-api'
 import Matches from '../../components/Matches/Matches';
 import NewMatchForm from '../../components/NewMatchForm/NewMatchForm';
-import * as userService from '../../utilities/users-service'
+// import * as userService from '../../utilities/users-service'
 
 export default function LadderMatches() {
   const [ladderMatches, setLadderMatches] = useState([])
@@ -15,13 +15,14 @@ export default function LadderMatches() {
     getMatches()
   }, [])
 
-  async function handleCheckToken() {
-    const expDate = await userService.checkToken()
-    console.log(expDate)
-  }
+  // async function handleCheckToken() {
+  //   const expDate = await userService.checkToken()
+  //   console.log(expDate)
+  // }
   
   function addMatch(match) {
     setLadderMatches({...ladderMatches, match})
+    window.location.reload();
   }
 
   return (
