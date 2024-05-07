@@ -20,7 +20,17 @@ Esport Arena is a gaming app for all gamers ranging from friends that want to ha
 
 # :hammer_and_wrench: Languages and Tools :
 <div align="center">
-<img src="https://github.com/devicons/devicon/blob/master/icons/react/react-original-wordmark.svg"  title="CSS3" alt="React" width="40" height="40"/>&nbsp;&nbsp;<img src="https://github.com/devicons/devicon/blob/master/icons/mongodb/mongodb-plain-wordmark.svg"  title="CSS3" alt="MongoDb" width="40" height="40"/>&nbsp;&ensp;<img src="https://github.com/devicons/devicon/blob/master/icons/express/express-original-wordmark.svg"  title="CSS3" alt="Express" width="40" height="40"/>&nbsp;&ensp;<img src="https://github.com/devicons/devicon/blob/master/icons/html5/html5-original.svg" title="HTML5" alt="HTML" width="40" height="40"/>&nbsp;&ensp;<img src="https://github.com/devicons/devicon/blob/master/icons/javascript/javascript-original.svg" title="JavaScript" alt="JavaScript" width="40" height="40"/>&nbsp;&ensp;<img src="https://github.com/devicons/devicon/blob/master/icons/postgresql/postgresql-original-wordmark.svg" title="JavaScript" alt="JavaScript" width="40" height="40"/>&nbsp;&ensp;<img src="https://github.com/devicons/devicon/blob/master/icons/vscode/vscode-original-wordmark.svg" title="JavaScript" alt="JavaScript" width="40" height="40"/>&nbsp;&ensp;<img src="https://user-images.githubusercontent.com/25181517/192108374-8da61ba1-99ec-41d7-80b8-fb2f7c0a4948.png" title="JavaScript" alt="JavaScript" width="40" height="40"/>&nbsp;&ensp;<img src="https://user-images.githubusercontent.com/25181517/189715289-df3ee512-6eca-463f-a0f4-c10d94a06b2f.png" title="JavaScript" alt="JavaScript" width="40" height="40"/>&nbsp;&ensp;<img src="https://cdn.brighttalk.com/ams/california/images/channel/19357/image_840418.png" title="JavaScript" alt="JavaScript" width="40" height="40"/>&nbsp;
+<img src="https://github.com/devicons/devicon/blob/master/icons/react/react-original-wordmark.svg"  title="CReact" alt="React" width="40" height="40"/>&nbsp;&nbsp;
+<img src="https://github.com/devicons/devicon/blob/master/icons/mongodb/mongodb-plain-wordmark.svg"  title="MongoDb" alt="MongoDb" width="40" height="40"/>&nbsp;&ensp;
+<img src="https://github.com/devicons/devicon/blob/master/icons/express/express-original.svg"  title="Express" alt="Express" width="40" height="40"/>&nbsp;&ensp;
+<img src="https://github.com/devicons/devicon/blob/master/icons/html5/html5-original.svg" title="HTML5" alt="HTML" width="40" height="40"/>&nbsp;&ensp;
+<img src="https://github.com/devicons/devicon/blob/master/icons/javascript/javascript-original.svg" title="JavaScript" alt="JavaScript" width="40" height="40"/>&nbsp;&ensp;
+<img src="https://github.com/devicons/devicon/blob/master/icons/nodejs/nodejs-original-wordmark.svg" title="Node.js" alt="Node.js" width="40" height="40"/>&nbsp;&ensp;
+<img src="https://github.com/devicons/devicon/blob/master/icons/vscode/vscode-original-wordmark.svg" title="VSCode" alt="VSCode" width="40" height="40"/>&nbsp;&ensp;
+<img src="https://user-images.githubusercontent.com/25181517/192108374-8da61ba1-99ec-41d7-80b8-fb2f7c0a4948.png" title="git" alt="git" width="40" height="40"/>&nbsp;&ensp;
+<img src="https://github.com/devicons/devicon/blob/master/icons/trello/trello-original-wordmark.svg" title="trello" alt="trello" width="40" height="40"/>&nbsp;&ensp;
+<img src="https://github.com/devicons/devicon/blob/master/icons/figma/figma-original.svg" title="figma" alt="figma" width="40" height="40"/>&nbsp;
+<img src="https://github.com/devicons/devicon/blob/master/icons/mongoose/mongoose-original-wordmark.svg" title="mongoose" alt="mongoose" width="40" height="40"/>&nbsp;
 </div>
 
 # Getting Started
