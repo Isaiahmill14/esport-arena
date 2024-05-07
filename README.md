@@ -24,7 +24,7 @@ Esport Arena is a gaming app for all gamers ranging from friends that want to ha
 </div>
 
 # Getting Started
-- [START WANDERING](http://esports-arena-70ad561b1774.herokuapp.com/)
+- [GAME ON](http://esports-arena-70ad561b1774.herokuapp.com/)
 - [TRELLO](https://trello.com/b/MK0FRfKp/esport-arena)
 - [WIREFRAME](https://www.figma.com/file/a93XCUR77sfCYEclFe0FuZ/Esport-Arena-Wireframes?type=design&node-id=0-1&mode=design&t=YBYcUcL1qKLcuiBT-0)
 
