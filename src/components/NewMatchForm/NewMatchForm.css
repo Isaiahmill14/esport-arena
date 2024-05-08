@@ -9,11 +9,11 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin-bottom: 10px; /* Adjust as needed */
+    margin-bottom: 10px; 
 }
 
 label {
-    margin-right: 10px; /* Adjust as needed */
+    margin-right: 10px;
 }
 
 button {

@@ -2,7 +2,6 @@ import { useState, useEffect } from 'react';
 import * as matchesAPI from '../../utilities/matches-api'
 import Matches from '../../components/Matches/Matches';
 import NewMatchForm from '../../components/NewMatchForm/NewMatchForm';
-// import * as userService from '../../utilities/users-service'
 
 export default function LadderMatches({ user }) {
   const [ladderMatches, setLadderMatches] = useState([])
@@ -15,11 +14,6 @@ export default function LadderMatches({ user }) {
     }
     getMatches()
   }, [toggle])
-
-  // async function handleCheckToken() {
-  //   const expDate = await userService.checkToken()
-  //   console.log(expDate)
-  // }
   
   function addMatch(match) {
     setLadderMatches({...ladderMatches, match})
@@ -31,7 +25,6 @@ export default function LadderMatches({ user }) {
       <NewMatchForm setToggle={setToggle} addMatch={addMatch} />
       <hr />
       <Matches ladderMatches={ladderMatches} user={user} toggle={toggle} setToggle={setToggle} />
-      {/* <button onClick={handleCheckToken}>Check When My Login Expires</button> */}
     </main>
   );
 }

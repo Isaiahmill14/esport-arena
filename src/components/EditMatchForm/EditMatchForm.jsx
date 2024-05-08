@@ -29,7 +29,6 @@ export default function EditMatchForm({ id, setEditMatch }) {
             gamerTag: '',
         })
     }
-    console.log(id)
     return (
         <form className="EditMatchForm" onSubmit={handleEditMatch}>
             <div className="flex-ctr-ctr">

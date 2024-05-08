@@ -23,12 +23,8 @@ async function login(req, res) {
 
 async function create(req, res) {
  try {
-  // add the user the the database
   const user = await User.create(req.body)
-  // token will be a string
   const token = createJWT(user)
-  // Yes, we can use res,json to send back just a string
-  // The client code needs to take this into consideration
   res.json(token)
  } catch (err) {
   res.status(400).json(err)
@@ -36,7 +32,6 @@ async function create(req, res) {
 }
 
 function checkToken(req, res) {
-  // req.user will always be there for you when a token is sent
   console.log('req.user', req.user);
   res.json(req.exp);
 }

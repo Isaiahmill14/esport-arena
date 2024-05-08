@@ -3,8 +3,6 @@ import * as forumsAPI from '../../utilities/forums-api'
 import Forums from '../../components/Forums/Forums';
 import NewForumForm from '../../components/NewForumForm/NewForumForm'
 
-
-
 export default function ShowForums({ user }) {
   const [forums, setForums] = useState([])
   const [bananas, setBananas] = useState(true)

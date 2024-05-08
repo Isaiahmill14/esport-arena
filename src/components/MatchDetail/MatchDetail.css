@@ -1,6 +1,6 @@
 .match-card-container {
     display: flex;
-    justify-content: center; /* Center the cards horizontally */
+    justify-content: center;
     align-items: center;
 }
 
@@ -10,18 +10,18 @@
     justify-content: center;
     align-items: center;
     background-color: #595e606c;
-    border: 1px solid #ccc; /* Add border for card */
+    border: 1px solid #ccc;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     margin-bottom: 16px;
     padding: 16px;
-    max-width: 400px; /* Set maximum width for the card */
-    width: 100%; /* Ensure the card takes up the available width */
-    margin-right: 16px; /* Add some space between the cards */
+    max-width: 400px; 
+    width: 100%;
+    margin-right: 16px; 
 }
 
 .match-card:last-child {
-    margin-right: 0; /* Remove margin from the last card to prevent extra space */
+    margin-right: 0; 
 }
 
 .match-card-content {
